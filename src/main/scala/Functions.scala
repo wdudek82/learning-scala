@@ -29,7 +29,7 @@ object Functions {
     val listOne = List(1 to 10)
 
     def factorial(num: BigInt): BigInt = {
-      if(num <= 1
+      if(num <= 1)
         1
       else
         num * factorial(num - 1)

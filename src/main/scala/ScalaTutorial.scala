@@ -86,5 +86,23 @@ object ScalaTutorial {
     val weight = 175.5
 
     println(f"Hello $name. You are ${age + 1} years old and weight $weight%.2f")
+
+    // text positioning
+    printf("'%5d'\n", 5)
+    printf("'%-5d'\n", 5)
+    printf("'%05d'\n", 5)
+    printf("'%.5f'\n", 3.14)
+
+    var randSent = "I saw a dragon fly by"
+    println(randSent.indexOf("dragon"))
+
+    for(letter <- randSent)
+      println(letter)
+
+    var randSentArray = randSent.toArray
+    println(randSentArray.toString)
+
+    for(item <- randSentArray)
+      println(item)
   }
 }

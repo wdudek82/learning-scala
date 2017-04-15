@@ -1,0 +1,6 @@
+.idea
+local/
+backups/
+data/
+project/target/
+target/

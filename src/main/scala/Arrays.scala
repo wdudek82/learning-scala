@@ -1,3 +1,4 @@
+import scala.math._
 import scala.collection.mutable.ArrayBuffer
 import java.io.PrintWriter
 import scala.io.Source
@@ -34,7 +35,7 @@ object Arrays {
     println("Max of favNums: " + favNums.max)
     println("Min of favNums: " + favNums.min)
 
-    val sortedNums = favNums.sortWith(Math.abs(_) < Math.abs(_))
+    val sortedNums = favNums.sortWith(abs(_) < abs(_))
     print("\n" + sortedNums.deep.mkString(", ") + "\n")
 
     val favNumsTimes2 = for(num <- favNums) yield 2 * num

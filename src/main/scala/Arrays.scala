@@ -41,7 +41,7 @@ object Arrays {
     val favNumsTimes2 = for(num <- favNums) yield 2 * num
 
     println
-    favNumsTimes2.foreach(println)
+    favNumsTimes2.foreach(item => print("| " + item + " "))
     println
 
     println("Divisible by 4:")

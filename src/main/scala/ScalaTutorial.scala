@@ -9,7 +9,7 @@ object ScalaTutorial {
   def main(args: Array[String]): Unit = {
 
     // iteration
-    var i = 0
+    var i: Int = 0
     while(i <= 10) {
       println(i)
       i += 1
